@@ -288,7 +288,7 @@ def main():
                 if removeItem(pl, remove_label):
                     changed = True
                 else:
-                    print remove_label, 'was not found in dock (PLIST: ', plist_path, ')'
+                    print remove_label, 'was not found in dock (PLIST:', plist_path,')'
             if changed:
                 print remove_label, 'was removed from dock'
                 commitPlist(pl, plist_path, restart_dock)
