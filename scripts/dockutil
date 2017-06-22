@@ -289,8 +289,9 @@ def main():
                 if removeItem(pl, remove_label):
                     changed = True
                 else:
-                    print 'item', remove_label, 'was not found in', plist_path
+                    print 'Item', remove_label, 'was not found in', plist_path
             if changed:
+                print 'Icon for', remove_label, 'was removed from dock'
                 commitPlist(pl, plist_path, restart_dock)
         elif list: # --list action
             pl = readPlist(plist_path)
